@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_array - a function that prints elements of an array
@@ -14,5 +14,9 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", a[i]);
 	}
-		printf("\n");
+		if (i == (n - 1))
+		{
+			printf("%d", a[n - 1]);
+		}
+			printf("\n");
 }
