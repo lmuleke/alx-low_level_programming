@@ -16,7 +16,6 @@ int check_num(char *str)
 	count = 0;
 
 	while (count < strlen(str)) /*count string*/
-		
 	{
 		if (!isdigit(str[count])) /*check if str there are digit*/
 		{
@@ -54,7 +53,6 @@ int main(int argc, char *argv[])
 			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
 			sum += str_to_int;
 		}
-		
 		/*Condition if one of the numbers contains symbols that are not digits*/
 		else
 		{
