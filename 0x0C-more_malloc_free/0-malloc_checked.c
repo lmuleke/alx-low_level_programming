@@ -19,5 +19,5 @@ void *malloc_checked(unsigned int b)
 		perror("malloc failed");
 		exit(98);
 	}
-	return ptr;
+	return (ptr);
 }
