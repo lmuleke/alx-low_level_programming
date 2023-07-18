@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	printf("compiled from the file: %s\n", __FILE__);
 	return (0);
