@@ -3,20 +3,21 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stddef.h>
+#include "main.h"
 
 /**
  * read_textfile - Read textfile print
- * @filename: the text file being read
- * @letters: number of letters to read
- * Return: w- actual number of read and printed bytes 
- * 	   otherwise return 0
+ * @filename: the textfile to be read
+ * @letters: number of letters to be read
+ * Return: W- the actual number of the read and printed bytes
+ * if unsuccessful return 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buf;
 	ssize_t fd;
-	ssize_t w;
 	ssize_t t;
+	ssize_t w;
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
