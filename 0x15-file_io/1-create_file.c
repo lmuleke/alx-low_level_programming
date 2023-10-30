@@ -3,7 +3,7 @@
 /**
  * create_file - creates a file
  * @filename: pointer to the name of the file to be created
- * text_content: pointer to the string that writes the file
+ * @text_content: pointer to the string that writes the file
  *
  * Return: print - - 1 if the function fails if successful -1.
  */
