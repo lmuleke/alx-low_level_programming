@@ -2,7 +2,7 @@
 
 /**
  * append_text_to_file - text at the end of the file is appended
- * @file name: name of the file
+ * @filename: name of the file
  * @text_content: additonal content
  *
  * Return: if th file exists return 1, failure to which, return -1
@@ -23,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		for (nletters = 0; text_content[nletters]; nletters++);
+		for (nletters = 0; text_content[nletters]; nletters++)
 		rwr = write(file_d, text_content, nletters);
 
 		if (rwr == -1)
