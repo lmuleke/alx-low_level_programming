@@ -3,9 +3,11 @@
 /**
  * create_file - creates a file
  * @filename: pointer to the name of the file to be created
+ * text_content: pointer to the string that writes the file
  *
  * Return: print - - 1 if the function fails if successful -1.
  */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd, w, len = 0;
